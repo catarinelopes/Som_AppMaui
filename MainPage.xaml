@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App_som.MainPage"
+             BackgroundColor="LightSlateGrey"
+             Shell.NavBarIsVisible="False"
+             
+             >
+
+    <ScrollView>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="450"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.ColumnSpan="2" Text="Musiquinhas!" TextColor="Black" FontSize="Large" HorizontalOptions="Center"/>
+            <Label Grid.ColumnSpan="2" Text="Escolha e aperte em um instrumento de cada frame para criar músicas. pause ou reinicie para criar novas combinações" TextColor="Black" FontSize="15" HorizontalOptions="Center" Margin="5,45,5,0" HorizontalTextAlignment="Center"/>
+
+
+            <Frame BorderColor="Black" BackgroundColor="RosyBrown" Margin="0,100,0,0"/>
+
+            <Label Text="Bateria" TextColor="Black" FontSize="Medium" HorizontalOptions="Center" Margin="0,130,0,0"/>
+
+
+            <Button
+                Margin="0,-50,0,0"
+                Text="Bateria 1"
+                x:Name="bateria1"
+                BorderColor="SaddleBrown"
+                BackgroundColor="White"
+                HeightRequest="30"
+                WidthRequest="100"
+                Clicked="bateria1_Clicked"
+                />
+
+            <Button
+                Margin="0,50,0,0"
+                Text="Bateria 2"
+                x:Name="bateria2"
+                BorderColor="SaddleBrown"
+                BackgroundColor="White"
+                HeightRequest="30"
+                WidthRequest="100"
+                Clicked="bateria2_Clicked"
+                />
+
+            <Button
+                Margin="0,150,0,0"
+                Text="Bateria 3"
+                x:Name="bateria3"
+                BorderColor="SaddleBrown"
+                BackgroundColor="White"
+                HeightRequest="30"
+                WidthRequest="100"
+                Clicked="bateria3_Clicked"
+                />
+
+            <Button
+                Margin="0,250,0,0"
+                Text="Bateria 4"
+                x:Name="bateria4"
+                BorderColor="SaddleBrown"
+                BackgroundColor="White"
+                HeightRequest="30"
+                WidthRequest="100"
+                Clicked="bateria4_Clicked"
+                />
+
+            <Button
+                Margin="0,350,0,0"
+                Text="Bateria 5"
+                x:Name="bateria5"
+                BorderColor="SaddleBrown"
+                BackgroundColor="White"
+                HeightRequest="30"
+                WidthRequest="100"
+                Clicked="bateria5_Clicked"
+                />
+
+            <!-- GUITARRA -->
+            <Frame BorderColor="Black" BackgroundColor="LightGray" Grid.Column="1" Margin="0,100,0,0" />
+
+            <Label Text="Guitarra" TextColor="Black" FontSize="Medium" HorizontalOptions="Center" Margin="0,130,0,0" Grid.Column="1"/>
+
+
+            <Button
+                Grid.Column="1"
+                Margin="0,0,0,0"
+                Text="Guitarra 1"
+                x:Name="guitarra1"
+                BorderColor="SaddleBrown"
+                BackgroundColor="White"
+                HeightRequest="30"
+                WidthRequest="100"
+                Clicked="guitarra1_Clicked"
+                />
+
+            <Button
+                Grid.Column="1"
+                Margin="0,100,0,0"
+                Text="Guitarra 2"
+                x:Name="guitarra2"
+                BorderColor="SaddleBrown"
+                BackgroundColor="White"
+                HeightRequest="30"
+                WidthRequest="100"
+                Clicked="guitarra2_Clicked"
+                />
+
+            <Button
+                Grid.Column="1"
+                Margin="0,200,0,0"
+                Text="Guitarra 3"
+                x:Name="guitarra3"
+                BorderColor="SaddleBrown"
+                BackgroundColor="White"
+                HeightRequest="30"
+                WidthRequest="100"
+                Clicked="guitarra3_Clicked"
+                />
+
+            <Button
+                Grid.Column="1"
+                Margin="0,300,0,0"
+                Text="Violão"
+                x:Name="violao"
+                BorderColor="SaddleBrown"
+                BackgroundColor="White"
+                HeightRequest="30"
+                WidthRequest="100"
+                Clicked="violao_Clicked"
+                />
+            
+            <!-- PIANO-->
+
+
+            <Frame BorderColor="Black" BackgroundColor="LightPink" Grid.Row="1"  Margin="0,0,0,0"  />
+
+            <Label Text="Piano" TextColor="Black" FontSize="Medium" HorizontalOptions="Center" Margin="0,30,0,0" Grid.Row="1"/>
+
+
+            <Button
+                Grid.Row="1"
+                Margin="0,-25,0,0"
+                Text="Piano 1"
+                x:Name="piano1"
+                BorderColor="SaddleBrown"
+                BackgroundColor="White"
+                HeightRequest="30"
+                WidthRequest="100"
+                Clicked="piano1_Clicked"
+                />
+
+            <Button
+                Grid.Row="1"
+                Margin="0,75,0,0"
+                Text="Piano 2"
+                x:Name="piano2"
+                BorderColor="SaddleBrown"
+                BackgroundColor="White"
+                HeightRequest="30"
+                WidthRequest="100"
+                Clicked="piano2_Clicked"
+                />
+
+
+            <!-- OUTROS-->
+
+
+            <Frame BorderColor="Black" BackgroundColor="LightGreen" Grid.Row="1" Grid.Column="1"  Margin="0,0,0,0"  />
+
+            <Label Text="Diversos" TextColor="Black" FontSize="Medium" HorizontalOptions="Center" Margin="0,30,0,0" Grid.Row="1" Grid.Column="1"/>
+
+
+            <Button
+                Grid.Row="1" Grid.Column="1"
+                Margin="0,-25,0,0"
+                Text="Heróico"
+                x:Name="heroico"
+                BorderColor="SaddleBrown"
+                BackgroundColor="White"
+                HeightRequest="30"
+                WidthRequest="100"
+                Clicked="heroico_Clicked"
+                />
+
+            <Button
+                Grid.Row="1" Grid.Column="1"
+                Margin="0,75,0,0"
+                Text="Yeah"
+                x:Name="Yeah"
+                BorderColor="SaddleBrown"
+                BackgroundColor="White"
+                HeightRequest="30"
+                WidthRequest="100"
+                Clicked="Yeah_Clicked"
+                />
+
+
+
+
+
+
+        </Grid>
+
+        
+
+
+
+    </ScrollView>
+
+</ContentPage>
